@@ -1,45 +1,41 @@
-# Git
-.git
-.gitignore
-.gitattributes
-
-# Dépendances
+# Dependencies
 node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
+/.pnp
+.pnp.js
 
-# Build
-dist/
-build/
-.tsbuildinfo
-
-# Environnement
+# Environment variables
 .env
 .env.local
 .env.*.local
 
-# IDE et éditeur
+# Build and distribution
+/dist
+/build
+dist-ssr/
+
+# IDE and editor files
 .vscode/
 .idea/
-.DS_Store
 *.swp
 *.swo
 *~
+.DS_Store
+*.sublime-workspace
+*.sublime-project
 
 # Testing
 /coverage
-.nyc_output/
 
 # Logs
-logs/
+logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# Documentation
-*.md
-
-# OS
+# OS specific
 .DS_Store
 .DS_Store?
 ._*
@@ -50,5 +46,7 @@ Thumbs.db
 
 # Misc
 .cache/
-.turbo/
 *.pid
+*.seed
+*.pid.lock
+.turbo/
